@@ -1,0 +1,4 @@
+{
+  "secret": "server secret",
+  "token_expires": "10h"
+}

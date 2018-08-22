@@ -1,0 +1,20 @@
+{
+  "name": "community-layer",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "@types/uuid": "^3.4.3",
+    "tslint": "^5.10.0",
+    "tslint-loader": "^3.6.0",
+    "typescript": "^2.9.2"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "uuid": "^3.2.1"
+  }
+}

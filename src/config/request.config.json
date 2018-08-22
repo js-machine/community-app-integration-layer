@@ -1,0 +1,5 @@
+{
+    "communityAppUrl": "http://localhost:3030/",
+    "gameRegistrationUrl": "/api/v1/app-token",
+    "gameResultUrl": "/api/v1/statistic/set-game-result"
+}
