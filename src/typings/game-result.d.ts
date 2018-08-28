@@ -1,9 +1,20 @@
-export interface GameResult {
-    roomToken: string,
-    playersResult: PlayerResult[]
+export enum ResultStatus {
+    Init,
+    Win,
+    Lose,
+    Draw,
 }
 
-export interface PlayerResult {
-    playerToken: string,
-    playerPoints: number
+export enum ParticipationStatus {
+    Init,
+    Leave,
+    play,
+}
+
+export interface GameResult {
+    userToken: string;
+    playedTime: number;
+    scores: number;
+    resultStatus: ResultStatus;
+    participationStatus: ParticipationStatus;
 }
