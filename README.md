@@ -26,10 +26,10 @@
       `[ { userToken: "USER_TOKEN"; playedTime: 100000; scores: 20; resultStatus: 1; participationStatus: 2; }]`
 
       Где 'resultStatus' результат игры пользователя: 1 - Пользователь проиграл, 2 - Пользователь выиграл, 3 - Ничья.
-      А  'participationStatus' сотояние игрока на конец игры: 1 - Вышел до конца игра, 2 - Доиграл до конца. 
+      А  'participationStatus' сотояние игрока на конец игры: 1 - Вышел до конца игры, 2 - Доиграл до конца. 
 
 ![](./assets/set-game-result-request.jpg)
-      
+
 ### Community-layer
 Если у вас Node.js сервер вы можете использовать npm пакет community-layer
 * Установка
