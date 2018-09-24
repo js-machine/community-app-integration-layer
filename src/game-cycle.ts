@@ -1,12 +1,17 @@
 import axios from 'axios';
-import url from 'url';
-import uuid from 'uuid/v4';
+import * as url from 'url';
+import * as uuid from 'uuid/v4';
 
-import requestConfig from './config/request.config.json';
 import { GameResult } from './typings';
 
+const requestConfig = {
+    communityAppUrl: 'http://localhost:3030/',
+    gameRegistrationUrl: '/api/v1/app-token',
+    gameResultUrl: '/api/v1/statistic/set-game-result',
+};
+
 export class GameCycle {
-    public async setGameResult(gameResult: GameResult, appToken: string): Promise<void> {
+    public async setGameResult(gameResult: GameResult[], appToken: string): Promise<void> {
         const path = url.resolve(requestConfig.communityAppUrl, requestConfig.gameResultUrl);
 
         try {
