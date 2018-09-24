@@ -8,7 +8,7 @@ export enum ResultStatus {
 export enum ParticipationStatus {
     Init,
     Leave,
-    play,
+    Play,
 }
 
 export interface GameResult {
