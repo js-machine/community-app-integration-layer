@@ -11,7 +11,7 @@ const requestConfig = {
 };
 
 export class GameCycle {
-    public async setGameResult(gameResult: GameResult, appToken: string): Promise<void> {
+    public async setGameResult(gameResult: GameResult[], appToken: string): Promise<void> {
         const path = url.resolve(requestConfig.communityAppUrl, requestConfig.gameResultUrl);
 
         try {
