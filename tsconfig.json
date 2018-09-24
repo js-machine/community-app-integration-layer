@@ -6,10 +6,8 @@
         "removeComments": false,
         "noImplicitAny": true,
         "preserveConstEnums": true,
-        "outDir": "./dist",
+        "outDir": "./dist/",
         "strict": true,
-        "resolveJsonModule": true,
-        "esModuleInterop": true
     },
     "include": [
         "src/**/*"
