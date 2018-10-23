@@ -5,7 +5,7 @@ import * as uuid from 'uuid/v4';
 import { GameResult } from './typings';
 
 const requestConfig = {
-    communityAppUrl: 'http://localhost:3030/',
+    communityAppUrl: 'https://battle-net.herokuapp.com/',
     gameRegistrationUrl: '/api/v1/app-token',
     gameResultUrl: '/api/v1/statistic/set-game-result',
 };
